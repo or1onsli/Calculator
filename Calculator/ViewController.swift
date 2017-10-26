@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DeviceKit
 
 class ViewController: UIViewController {
     
@@ -21,9 +22,9 @@ class ViewController: UIViewController {
     private var brain = CalculatorBrain()
     private var userIsInTheMiddleOfTyping = false
     
-    var iPhoneModel: String {
+    var iPhoneModel: Device {
         get {
-            return UIDevice.current.modelName
+            return Device()
         }
     }
     
@@ -50,12 +51,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         // round the corners of the calculator on iPhone X
-        if iPhoneModel == "iPhone X" {
+        if iPhoneModel == .iPhoneX || iPhoneModel == .simulator(.iPhoneX){
             cornerView.layer.cornerRadius = 35
             cornerView.layer.masksToBounds = true
-        } else if iPhoneModel == "Simulator" {
-            i
-        }
+        } 
     }
     
     //MARK: IBAction(s)
