@@ -1,0 +1,3 @@
+[submodule "DeviceKit"]
+	path = DeviceKit
+	url = https://github.com/dennisweissmann/DeviceKit.git
