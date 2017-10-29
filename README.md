@@ -17,6 +17,7 @@ The project is composed by eight required tasks and three optional tasks, I went
 - **Add a String property to your CalculatorBrain called description which returns a description of the sequence of operands and operations that led to the value returned by result** (or the result so far if resultIsPending). The character = (the equals sign) should never appear in this description, nor should ... (ellipses).
 
 - **Implement a UILabel in your UI which shows the sequence of operands and operations that led to (or is leading to if resultIsPending) what is (or “will be” if resultIsPending) showing in the display**. If resultIsPending is true, put . . . on the end of the UILabel, else put =. If the userIsInTheMiddleOfTyping, you can leave the UILabel showing whatever was there before the user started typing the number. Examples ...
+
   a. touching 7 + would show “7 + ...” (with 7 still in the display)
   
   b. 7 + 9 would show “7 + ...” (9 in the display)
