@@ -1,5 +1,11 @@
-# Calculator
-This is my solution to the first programming assignment of the CS913P course held by Paul Hegarty at the Stanford University and which you can attend on the iTunes U app on your iPad/iPhone.
+# Calculator 
+![Build](https://img.shields.io/badge/build-passed-brightgreen.svg)
+![GitHub license](https://img.shields.io/badge/license-MIT-yellowgreen.svg)
+![Platform](https://img.shields.io/badge/platform-iOS-blue.svg)
+![Language](https://img.shields.io/badge/language-Swift-orange.svg)
+![Device](https://img.shields.io/badge/device-iPhone-lightgrey.svg)
+
+This is my solution to the first programming assignment of the **CS913P** course held by **Paul Hegarty** at the Stanford University and which you can attend on the iTunes U app on your iPad/iPhone.
 
 ## The Project
 The project is composed by eight required tasks and three optional tasks, I went only through the required ones which are the following:
@@ -42,5 +48,5 @@ The project is composed by eight required tasks and three optional tasks, I went
 
 - **Add a C button that clears everything** (your display, the new UILabel you added above, any pending binary operations, etc.). Ideally, this should leave your Calculator in the same state it was in when you launched it.
 
-## These are two screenshots of the final result taken on iPhone X and iPhone 8.
+### These are two screenshots of the final result taken on iPhone X and iPhone 8.
 
