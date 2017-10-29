@@ -54,4 +54,4 @@ The project is composed by eight required tasks and three optional tasks, I went
   <p align="center"> <img src="https://github.com/or1onsli/Calculator/blob/master/iPhone%208.png" width="400"> <p>
   <p align="center"> iPhone 8 <p>
 
-Copyright (c) 2017 Andrea Vultaggio under MIT License
+### Copyright (c) 2017 Andrea Vultaggio under MIT License
