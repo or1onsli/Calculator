@@ -67,51 +67,42 @@ struct CalculatorBrain {
                 case .constant(let value):
                     accumulator = value
                     description = ""
-                print(description)
                 case .unaryOperation(let function):
                     if accumulator != nil {
                         let value = String(describing: accumulator!).removeAfterPointIfZero()
                         description = symbol + "(" + value.setMaxLength(of: 5) + ")" + "="
                         accumulator = function(accumulator!)
-                        print(description)
                     }
-            case .binaryOperation(let function):
-                performPendingBinaryOperation()
-                
-                if accumulator != nil {
+                case .binaryOperation(let function):
+                    performPendingBinaryOperation()
+                    
+                    if accumulator != nil {
+                        if description.last == "=" {
+                            description = String(describing: accumulator!).removeAfterPointIfZero().setMaxLength(of: 5) + symbol
+                        } else {
+                            description += symbol
+                        }
+                        
+                        pendingBinaryOperation = PendingBinaryOperation(function: function, firstOperand: accumulator!)
+                        resultIsPending = true
+                        accumulator = nil
+                    }
+                case .result:
+                    performPendingBinaryOperation()
                     
                     if !resultIsPending {
-                        description = String(describing: accumulator!).removeAfterPointIfZero().setMaxLength(of: 5) + symbol
-                    } else {
-                        description += symbol
+                        description += "="
                     }
-                    
-                    print(description)
-                    pendingBinaryOperation = PendingBinaryOperation(function: function, firstOperand: accumulator!)
-                    
-                    resultIsPending = true
-                    accumulator = nil
-                }
-                
-            case .result:
-                performPendingBinaryOperation()
-                
-                if !resultIsPending {
-                    description += "="
-                }
-                print(description)
             }
         }
     }
     
     mutating func setOperand(_ operand: Double) {
         accumulator = operand
-        
         if !resultIsPending {
             description = String(describing: operand).removeAfterPointIfZero().setMaxLength(of: 5)
         } else {
             description += String(describing: operand).removeAfterPointIfZero().setMaxLength(of: 5)
         }
-        print(description)
     }
 }
