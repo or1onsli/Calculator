@@ -58,4 +58,4 @@ The project is composed by eight required tasks and three optional tasks, I went
 
 
 
-### Copyright (c) 2017 Andrea Vultaggio under MIT License
+**Copyright (c) 2017 Andrea Vultaggio under MIT License**
