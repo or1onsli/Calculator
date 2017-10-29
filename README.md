@@ -42,5 +42,5 @@ The project is composed by eight required tasks and three optional tasks, I went
 
 - **Add a C button that clears everything** (your display, the new UILabel you added above, any pending binary operations, etc.). Ideally, this should leave your Calculator in the same state it was in when you launched it.
 
-## These are two screenshots taken on iPhone X and iPhone 8.
+## These are two screenshots of the final result taken on iPhone X and iPhone 8.
 
