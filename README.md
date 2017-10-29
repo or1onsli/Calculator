@@ -18,15 +18,25 @@ The project is composed by eight required tasks and three optional tasks, I went
 
 - **Implement a UILabel in your UI which shows the sequence of operands and operations that led to (or is leading to if resultIsPending) what is (or “will be” if resultIsPending) showing in the display**. If resultIsPending is true, put . . . on the end of the UILabel, else put =. If the userIsInTheMiddleOfTyping, you can leave the UILabel showing whatever was there before the user started typing the number. Examples ...
   a. touching 7 + would show “7 + ...” (with 7 still in the display)
+  
   b. 7 + 9 would show “7 + ...” (9 in the display)
+  
   c. 7 + 9 = would show “7 + 9 =” (16 in the display)
+  
   d. 7 + 9 = √ would show “√(7 + 9) =” (4 in the display)
+  
   e. 7 + 9 = √ + 2 = would show “√(7 + 9) + 2 =” (6 in the display)
+  
   f. 7 + 9 √ would show “7 + √(9) ...” (3 in the display)
+  
   g. 7 + 9 √ = would show “7 + √(9) =“ (10 in the display)
+  
   h. 7 + 9 = + 6 = + 3 = would show “7 + 9 + 6 + 3 =” (25 in the display)
+  
   i. 7 + 9 = √ 6 + 3 = would show “6 + 3 =” (9 in the display)
+  
   j. 5 + 6 = 7 3 would show “5 + 6 =” (73 in the display)
+  
   k. 4 × π = would show “4 × π =“ (12.5663706143592 in the display)
 
 - **Add a C button that clears everything** (your display, the new UILabel you added above, any pending binary operations, etc.). Ideally, this should leave your Calculator in the same state it was in when you launched it.
