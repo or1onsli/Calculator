@@ -8,8 +8,13 @@
 
 import Foundation
 
-//useful functions for the manipulation of the strings (values) which we put on the calculator display
-public extension String {
+/*
+ * Useful functions for the manipulation of the strings (values) which we put on the calculator display.
+ * Instead of using the NumberFormatter object I preferred to format the strings manually and make a simple exercise
+ * on doing some extensions.
+ */
+ 
+ public extension String {
     
     // set the max length of the number to display
     public func setMaxLength(of maxLength: Int) -> String {

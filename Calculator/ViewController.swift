@@ -80,6 +80,8 @@ class ViewController: UIViewController {
             }
             userIsInTheMiddleOfTyping = true
         }
+        
+        sequence.text = brain.description
     }
     
     @IBAction func performOperation(_ sender: UIButton) {
@@ -96,6 +98,8 @@ class ViewController: UIViewController {
         if let result = brain.result {
             displayValue = result
         }
+        
+        sequence.text = brain.description
     }
 }
 

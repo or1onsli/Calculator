@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhG-Ez-kWt">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                        <rect key="frame" x="8" y="0.0" width="346" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="zpu-xi-fk6"/>
                                         </constraints>
@@ -295,8 +295,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="qhG-Ez-kWt" firstAttribute="leading" secondItem="21j-mV-iay" secondAttribute="leading" id="AoR-Va-u1q"/>
-                                    <constraint firstAttribute="trailing" secondItem="qhG-Ez-kWt" secondAttribute="trailing" id="MLJ-Yb-dVe"/>
+                                    <constraint firstItem="qhG-Ez-kWt" firstAttribute="leading" secondItem="21j-mV-iay" secondAttribute="leading" constant="8" id="AoR-Va-u1q"/>
+                                    <constraint firstAttribute="trailing" secondItem="qhG-Ez-kWt" secondAttribute="trailing" constant="21" id="MLJ-Yb-dVe"/>
                                     <constraint firstAttribute="trailing" secondItem="l4d-nc-cJf" secondAttribute="trailing" id="ikH-cC-7ag"/>
                                     <constraint firstItem="l4d-nc-cJf" firstAttribute="top" secondItem="21j-mV-iay" secondAttribute="top" id="omY-E8-thX"/>
                                     <constraint firstItem="l4d-nc-cJf" firstAttribute="leading" secondItem="21j-mV-iay" secondAttribute="leading" id="siW-e1-kGb"/>
@@ -322,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="148"/>
+            <point key="canvasLocation" x="-679.20000000000005" y="152.95566502463055"/>
         </scene>
     </scenes>
 </document>

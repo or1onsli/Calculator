@@ -97,12 +97,12 @@ struct CalculatorBrain {
         }
     }
     
-    mutating func setOperand(_ operand: Double) {
-        accumulator = operand
+    mutating func setOperand(_ operand: Double?) {
+        accumulator = operand ?? 0.0
         if !resultIsPending {
-            description = String(describing: operand).removeAfterPointIfZero().setMaxLength(of: 5)
+            description = String(describing: operand!).removeAfterPointIfZero().setMaxLength(of: 5)
         } else {
-            description += String(describing: operand).removeAfterPointIfZero().setMaxLength(of: 5)
+            description += String(describing: operand!).removeAfterPointIfZero().setMaxLength(of: 5)
         }
     }
 }
