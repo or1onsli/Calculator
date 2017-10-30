@@ -48,10 +48,19 @@ The project is composed by eight required tasks and three optional tasks, I went
 
 - **Add a C button that clears everything** (your display, the new UILabel you added above, any pending binary operations, etc.). Ideally, this should leave your Calculator in the same state it was in when you launched it.
 
-## These are two screenshots of the final result taken on iPhone X and iPhone 8.
+## These are the screenshots of the final result
+
+
 
   <p align="center"> <img src="https://github.com/or1onsli/Calculator/blob/master/iPhone%20X.png" width="400"> <p>
  
+ 
+ 
   <p align="center"> <img src="https://github.com/or1onsli/Calculator/blob/master/iPhone%208.png" width="400"> <p>
+
+
+
+
+
 
 **Copyright (c) 2017 Andrea Vultaggio under MIT License.**
