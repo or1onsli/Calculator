@@ -5,7 +5,7 @@
 ![Language](https://img.shields.io/badge/language-Swift-orange.svg)
 ![Device](https://img.shields.io/badge/device-iPhone-lightgrey.svg)
 
-This is my solution to the first programming assignment of the **CS913P** course held by **Paul Hegarty** at the Stanford University and which you can attend by the iTunes U app on your iPad/iPhone.
+This is my solution to the first programming assignment of the **CS913P** course held by **Paul Hegarty** at the Stanford University and which you can attend via the iTunesU app on your iPad/iPhone.
 
 ## The Project
 The project is composed by eight required tasks and three optional tasks, I went only through the required ones which are the following:
