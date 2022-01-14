@@ -22,15 +22,13 @@ class ViewController: UIViewController {
     private var brain = CalculatorBrain()
     private var userIsInTheMiddleOfTyping = false
     
-    var iPhoneModel: Device {
-        get {
-            return Device()
-        }
+    private var iPhoneModel: Device {
+        return Device.realDevice(from: .current)
     }
     
-    var displayValue: Double {
+    private var displayValue: Double {
         get {
-            return Double(display.text!)!
+            return Double(display.text ?? "") ?? Double.nan
         }
         set {
             let tmp = String(newValue).removeAfterPointIfZero()
@@ -49,9 +47,8 @@ class ViewController: UIViewController {
     //MARK: UIVIew Delegate
     
     override func viewDidLoad() {
-        
-        // round the corners of the calculator on iPhone X
-        if iPhoneModel == .iPhoneX || iPhoneModel == .simulator(.iPhoneX){
+        // round the corners of the calculator on iPhones with the notch.
+        if Device.allDevicesWithSensorHousing.contains(iPhoneModel) {
             cornerView.layer.cornerRadius = 35
             cornerView.layer.masksToBounds = true
         } 
@@ -60,10 +57,10 @@ class ViewController: UIViewController {
     //MARK: IBAction(s)
     
     @IBAction func touchDigit(_ sender: UIButton) {
-        let digit = sender.currentTitle!
+        guard let digit = sender.currentTitle else { return }
         
         if userIsInTheMiddleOfTyping {
-            let textCurrentlyInDisplay = display.text!
+            guard let textCurrentlyInDisplay = display.text else { return }
             
             if digit == "." && (textCurrentlyInDisplay.range(of: ".") != nil) {
                 return
@@ -85,7 +82,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func performOperation(_ sender: UIButton) {
-        
         if userIsInTheMiddleOfTyping {
             brain.setOperand(displayValue)
             userIsInTheMiddleOfTyping = false

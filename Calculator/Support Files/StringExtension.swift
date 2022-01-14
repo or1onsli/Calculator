@@ -17,10 +17,10 @@ import Foundation
  public extension String {
     
     // set the max length of the number to display
-    public func setMaxLength(of maxLength: Int) -> String {
+    func setMaxLength(of maxLength: Int) -> String {
         var tmp = self
         
-        if tmp.characters.count > maxLength {
+        if tmp.count > maxLength {
             var numbers = tmp.map({$0})
             
             if numbers[maxLength - 1] == "." {
@@ -35,7 +35,7 @@ import Foundation
     }
     
     // remove the '.0' when the number is not decimal
-    public func removeAfterPointIfZero() -> String {
+    func removeAfterPointIfZero() -> String {
         let token = self.components(separatedBy: ".")
         
         if !token.isEmpty && token.count == 2 {
