@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     private var displayValue: Double {
         get {
-            return Double(display.text ?? "") ?? Double.nan
+            return Double(display.text ?? Constants.emptyString) ?? Double.nan
         }
         set {
             let tmp = String(newValue).removeAfterPointIfZero()
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         // round the corners of the calculator on iPhones with the notch.
         if Device.allDevicesWithSensorHousing.contains(iPhoneModel) {
-            cornerView.layer.cornerRadius = 35
+            cornerView.layer.cornerRadius = Constants.cornerRadius
             cornerView.layer.masksToBounds = true
         } 
     }
@@ -62,16 +62,16 @@ class ViewController: UIViewController {
         if userIsInTheMiddleOfTyping {
             guard let textCurrentlyInDisplay = display.text else { return }
             
-            if digit == "." && (textCurrentlyInDisplay.range(of: ".") != nil) {
+            if digit == "." && (textCurrentlyInDisplay.range(of: Constants.decimalPoint) != nil) {
                 return
             } else {
                 let tmp = textCurrentlyInDisplay + digit
-                display.text = tmp.setMaxLength(of: 8)
+                display.text = tmp.setMaxLength(of: Constants.maxStringLength)
             }
             
         } else {
-            if digit == "." {
-                display.text = "0."
+            if digit == Constants.decimalPoint {
+                display.text = Constants.pointAfterZero
             } else {
                 display.text = digit
             }
@@ -99,3 +99,12 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController {
+    struct Constants {
+        static let cornerRadius: CGFloat = 35.0
+        static let decimalPoint: String = "."
+        static let emptyString: String = ""
+        static let maxStringLength: Int = 8
+        static let pointAfterZero: String = "0."
+    }
+}
