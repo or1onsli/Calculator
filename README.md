@@ -52,11 +52,11 @@ The project is composed by eight required tasks and three optional tasks, I went
 
 
 
-  <p align="center"> <img src="https://github.com/or1onsli/Calculator/blob/master/iPhone%20X.png" width="400"> <p>
+  <p align="center"> <img src="https://github.com/or1onsli/Calculator/blob/main/iPhone%20X.png" width="400"> <p>
  
  
  
-  <p align="center"> <img src="https://github.com/or1onsli/Calculator/blob/master/iPhone%208.png" width="400"> <p>
+  <p align="center"> <img src="https://github.com/or1onsli/Calculator/blob/main/iPhone%208.png" width="400"> <p>
 
 
 
