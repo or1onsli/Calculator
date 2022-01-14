@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     private var userIsInTheMiddleOfTyping = false
     
     private var iPhoneModel: Device {
-        return Device.current
+        return Device.realDevice(from: .current)
     }
     
     private var displayValue: Double {
@@ -47,8 +47,8 @@ class ViewController: UIViewController {
     //MARK: UIVIew Delegate
     
     override func viewDidLoad() {
-        // round the corners of the calculator on iPhone X
-        if iPhoneModel == .iPhoneX || iPhoneModel == .simulator(.iPhoneX) {
+        // round the corners of the calculator on iPhones with the notch.
+        if Device.allDevicesWithSensorHousing.contains(iPhoneModel) {
             cornerView.layer.cornerRadius = 35
             cornerView.layer.masksToBounds = true
         } 
