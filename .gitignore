@@ -1,0 +1,10 @@
+# Xcode
+.DS_Store
+
+Calculator.xcodeproj/project.xcworkspace/xcshareddata/*
+Calculator.xcodeproj/project.xcworkspace/xcuserdata/*
+Calculator.xcodeproj/xcuserdata/*
+Calculator.xcworkspace/xcshareddata/*
+Calculator.xcworkspace/xcuserdata/*
+
+Pods/*
