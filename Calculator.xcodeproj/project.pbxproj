@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1909E7E01F9FCF4B004F4F17 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1909E7DF1F9FCF4B004F4F17 /* StringExtension.swift */; };
-		192254191FA28E2F00793571 /* DeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192254151FA28DA900793571 /* DeviceKit.framework */; };
 		196DE5891F96AAAD000B3646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DE5881F96AAAD000B3646 /* AppDelegate.swift */; };
 		196DE58B1F96AAAD000B3646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DE58A1F96AAAD000B3646 /* ViewController.swift */; };
 		196DE58E1F96AAAD000B3646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196DE58C1F96AAAD000B3646 /* Main.storyboard */; };
@@ -18,26 +17,8 @@
 		E217DB5F87E208AD6DD49BAF /* Pods_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1167123928B3030E0410459 /* Pods_Calculator.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		192254141FA28DA900793571 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1922540E1FA28DA900793571 /* DeviceKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 955EE59A1D5E581B008C3DA8;
-			remoteInfo = DeviceKit;
-		};
-		192254161FA28DA900793571 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1922540E1FA28DA900793571 /* DeviceKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 955EE5A21D5E581B008C3DA8;
-			remoteInfo = DeviceKitTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		1909E7DF1F9FCF4B004F4F17 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		1922540E1FA28DA900793571 /* DeviceKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DeviceKit.xcodeproj; path = DeviceKit/DeviceKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 		196DE5851F96AAAD000B3646 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		196DE5881F96AAAD000B3646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		196DE58A1F96AAAD000B3646 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				192254191FA28E2F00793571 /* DeviceKit.framework in Frameworks */,
 				E217DB5F87E208AD6DD49BAF /* Pods_Calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,15 +44,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1922540F1FA28DA900793571 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				192254151FA28DA900793571 /* DeviceKit.framework */,
-				192254171FA28DA900793571 /* DeviceKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		192254181FA28E2F00793571 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +84,6 @@
 		196DE59A1F96B03C000B3646 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1922540E1FA28DA900793571 /* DeviceKit.xcodeproj */,
 				196DE5881F96AAAD000B3646 /* AppDelegate.swift */,
 				1909E7DF1F9FCF4B004F4F17 /* StringExtension.swift */,
 				196DE58F1F96AAAD000B3646 /* Assets.xcassets */,
@@ -182,35 +152,12 @@
 			mainGroup = 196DE57C1F96AAAC000B3646;
 			productRefGroup = 196DE5861F96AAAD000B3646 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 1922540F1FA28DA900793571 /* Products */;
-					ProjectRef = 1922540E1FA28DA900793571 /* DeviceKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				196DE5841F96AAAD000B3646 /* Calculator */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		192254151FA28DA900793571 /* DeviceKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = DeviceKit.framework;
-			remoteRef = 192254141FA28DA900793571 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		192254171FA28DA900793571 /* DeviceKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DeviceKitTests.xctest;
-			remoteRef = 192254161FA28DA900793571 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		196DE5831F96AAAD000B3646 /* Resources */ = {
